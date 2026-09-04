@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Opace Essential SEO Toolkit
+ * Plugin Name:       Opace Essential SEO Toolkit & SEO Audit Tool
  * Plugin URI:        https://opace.agency/tools/browser/
  * Description:       A private on-page SEO audit inside the WordPress editor, with accessibility and Web Vitals checks and page-aware links to saved SEO tools.
  * Version:           2.0.0

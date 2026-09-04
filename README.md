@@ -1,4 +1,4 @@
-# Essential SEO Toolkit for WordPress
+# Opace Essential SEO Toolkit & SEO Audit Tool – WordPress Plugin
 
 ![Essential SEO Toolkit private WordPress SEO audit](.github/assets/essential-seo-toolkit-wordpress-hero.png)
 
@@ -7,7 +7,7 @@
 [![PHPUnit](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-wordpress-plugin/actions/workflows/quality.yml/badge.svg)](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-wordpress-plugin/actions/workflows/quality.yml)
 [![Licence: GPL v3+](https://img.shields.io/badge/licence-GPL--3.0--or--later-blue.svg)](LICENSE)
 
-Essential SEO Toolkit is a private WordPress SEO audit and SEO tool organiser for posts, pages, custom post types, the home page and archives. It turns the page you are editing into a practical on-page SEO review with clear Pass, Review and Info findings.
+Opace Essential SEO Toolkit & SEO Audit Tool is a private WordPress SEO tool organiser and page-audit system for posts, pages, custom post types, the home page and archives. It turns the page you are editing into a practical on-page SEO review with clear Pass, Review and Info findings.
 
 The audit runs in your browser against your own site. Page content and full results are not sent to Opace or another audit service.
 
@@ -116,12 +116,12 @@ The PHPUnit suite contains 185 tests and 1,330 assertions. The release workflow 
 Version `2.0.0` prepared release SHA-256:
 
 ```text
-cb58c1c4f1545d130bad77dd659382e09d61bc7e0dff697be99dbb6d3581d73b
+f76ece064add6e803158078075f9023bf377ce2c150aad943fcc7036759079e4
 ```
 
 ## Related SEO tools, support and links
 
-- [Essential SEO Toolkit for Chrome](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-chrome-extension)
+- [Opace Essential SEO Toolkit & SEO Audit Tool – Google Chrome Extension](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-chrome-extension)
 - [Chrome Web Store listing](https://chromewebstore.google.com/detail/icagkiolfkmndbggheneeamfbnobcdma)
 - [WordPress.org support forum](https://wordpress.org/support/plugin/opace-essential-seo-toolkit/)
 - [Leave a WordPress.org review](https://wordpress.org/support/plugin/opace-essential-seo-toolkit/reviews/#new-post)

@@ -1,4 +1,4 @@
-=== Opace Essential SEO Toolkit ===
+=== Opace Essential SEO Toolkit & SEO Audit Tool ===
 Contributors: opacewebdesign
 Tags: seo audit, seo plugin, seo tool, seo analysis, on page seo
 Requires at least: 6.0
@@ -15,7 +15,7 @@ Run a private WordPress SEO audit with 14 on-page checks, accessibility, Web Vit
 
 Compatibility: version 2.0.0 was tested on WordPress 7.1 and PHP 8.3. Minimums: WordPress 6.0 and PHP 7.4.
 
-Essential SEO Toolkit is a private WordPress SEO audit and SEO tool organiser for posts, pages, custom post types, the home page and archives. It turns the page you are editing into a practical on-page SEO review with clear Pass, Review and Info findings.
+Opace Essential SEO Toolkit & SEO Audit Tool is a private WordPress SEO tool organiser and page-audit system for posts, pages, custom post types, the home page and archives. It turns the page you are editing into a practical on-page SEO review with clear Pass, Review and Info findings.
 
 The audit runs in your browser against your own site. Page content and full results are not sent to Opace or another audit service.
 
@@ -94,7 +94,7 @@ Version 2.0 replaces the old default tool list with the six current tools and re
 
 = Related Opace SEO tools, source code and support =
 
-* [Essential SEO Toolkit for Chrome](https://chromewebstore.google.com/detail/icagkiolfkmndbggheneeamfbnobcdma) runs the same local SEO audit on any public web page.
+* [Opace Essential SEO Toolkit & SEO Audit Tool – Google Chrome Extension](https://chromewebstore.google.com/detail/icagkiolfkmndbggheneeamfbnobcdma) runs the same local SEO audit on any public web page.
 * Browse the [WordPress plugin source on GitHub](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-wordpress-plugin) and the [Chrome extension source](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-chrome-extension).
 * Browse [Opace tool suites](https://opace.agency/tools/suite/), [Opace browser tools](https://opace.agency/tools/browser/) and [Opace SEO services](https://opace.agency/services/seo/).
 * Find open-source work from [Opace Digital Agency on GitHub](https://github.com/OpaceDigitalAgency).
