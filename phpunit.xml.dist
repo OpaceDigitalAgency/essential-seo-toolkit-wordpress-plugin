@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+	bootstrap="tests/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	convertDeprecationsToExceptions="true"
+	beStrictAboutTestsThatDoNotTestAnything="true"
+	failOnWarning="true"
+	verbose="true"
+>
+	<testsuites>
+		<testsuite name="opace-essential-seo-toolkit">
+			<directory prefix="test-" suffix=".php">./tests/</directory>
+		</testsuite>
+	</testsuites>
+	<php>
+		<const name="WP_TESTS_MULTISITE" value="0" />
+	</php>
+</phpunit>

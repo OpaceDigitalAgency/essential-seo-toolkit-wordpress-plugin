@@ -1,0 +1,1548 @@
+# Copyright (C) 2026 Opace Digital Agency
+# This file is distributed under the GPL-3.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Opace Essential SEO Toolkit 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/opace-essential-seo-toolkit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-03T12:28:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: opace-essential-seo-toolkit\n"
+
+#. Plugin Name of the plugin
+#: opace-essential-seo-toolkit.php
+#: includes/class-opace-eseot-settings.php:107
+#: includes/class-opace-eseot-settings.php:714
+msgid "Opace Essential SEO Toolkit"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: opace-essential-seo-toolkit.php
+msgid "https://opace.agency/tools/browser/"
+msgstr ""
+
+#. Description of the plugin
+#: opace-essential-seo-toolkit.php
+msgid "A private on-page SEO audit inside the WordPress editor, with accessibility and Web Vitals checks and page-aware links to saved SEO tools."
+msgstr ""
+
+#. Author of the plugin
+#: opace-essential-seo-toolkit.php
+msgid "Opace Digital Agency"
+msgstr ""
+
+#. Author URI of the plugin
+#: opace-essential-seo-toolkit.php
+msgid "https://opace.agency/"
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:77
+#: includes/class-opace-eseot-audit-page.php:78
+#: includes/class-opace-eseot-audit-page.php:192
+#: includes/class-opace-eseot-audit.php:1109
+#: includes/class-opace-eseot-help.php:437
+#: includes/class-opace-eseot-settings.php:999
+#: includes/class-opace-eseot-settings.php:1003
+msgid "Page audit"
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:149
+#: includes/class-opace-eseot-help.php:260
+#: includes/class-opace-eseot-settings.php:693
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:167
+msgid "None of the selected posts can be audited yet. Publish or save them first."
+msgstr ""
+
+#. translators: %s: this site's home address.
+#: includes/class-opace-eseot-audit-page.php:178
+#, php-format
+msgid "Enter an address on this site, for example %s. Other sites cannot be audited from here."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:194
+msgid "Audit any address on this site from your own browser: the page is loaded here, checked locally, and nothing is sent anywhere else."
+msgstr ""
+
+#. translators: %d: maximum number of posts in one bulk audit.
+#: includes/class-opace-eseot-audit-page.php:204
+#, php-format
+msgid "Only the first %d selected posts were kept for this audit."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:216
+msgid "Address to audit"
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:218
+#: includes/class-opace-eseot-help.php:762
+#: includes/class-opace-eseot-settings.php:684
+msgid "Audit"
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:219
+msgid "Any address on this site. Drafts use their preview link."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-page.php:289
+#: includes/class-opace-eseot-integrations.php:134
+#: includes/class-opace-eseot-integrations.php:685
+#: includes/class-opace-eseot-plugin.php:359
+msgid "(no title)"
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:108
+msgid "Last Essential SEO Toolkit page audit summary."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:120
+msgid "Time of the last Essential SEO Toolkit page audit (GMT unix time)."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:233
+#: includes/class-opace-eseot-audit-store.php:391
+msgid "Only pages on this site can be audited. The URL must be an absolute address on the same host as the site."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:273
+msgid "You must be logged in to save an audit summary."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:284
+#: includes/class-opace-eseot-audit-store.php:398
+msgid "Invalid post ID."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:291
+msgid "Sorry, you are not allowed to save an audit summary for this post."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:309
+msgid "Sorry, you are not allowed to save an audit summary for this address."
+msgstr ""
+
+#. translators: %s: comma-separated list of field names.
+#: includes/class-opace-eseot-audit-store.php:336
+#, php-format
+msgid "Unknown field: %s."
+msgstr ""
+
+#: includes/class-opace-eseot-audit-store.php:346
+msgid "audited_at must be an ISO 8601 date and time."
+msgstr ""
+
+#. translators: %s: number of checks that passed.
+#: includes/class-opace-eseot-audit-store.php:630
+#, php-format
+msgid "%s pass"
+msgid_plural "%s pass"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of checks marked Review.
+#: includes/class-opace-eseot-audit-store.php:632
+#, php-format
+msgid "%s review"
+msgid_plural "%s review"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of checks marked Info.
+#: includes/class-opace-eseot-audit-store.php:634
+#, php-format
+msgid "%s info"
+msgid_plural "%s info"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-opace-eseot-audit-store.php:637
+msgctxt "separator between the pass, review and info counts"
+msgid "·"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:411
+msgid "Absolute address of a page on this site."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:418
+msgid "Skip the 60 second cache."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:437
+msgid "You must be logged in to run a crawl check."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:444
+msgid "Sorry, you are not allowed to run a crawl check."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:465
+msgid "Enter an absolute http or https address on this site."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1051
+msgid "The page audit needs JavaScript."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1053
+#: includes/class-opace-eseot-audit.php:1127
+msgid "Save the post to get an address to audit."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1103
+msgid "Run audit"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1104
+msgid "Auditing…"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1105
+msgid "Run again"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1106
+msgid "Copy summary"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1107
+msgid "Copied"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1108
+msgid "Collapse"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1110
+msgid "Not audited yet"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1111
+msgid "Open full report"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1112
+#: includes/class-opace-eseot-plugin.php:449
+#: includes/class-opace-eseot-settings.php:108
+#: includes/class-opace-eseot-settings.php:260
+msgid "Settings"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1114
+#: includes/class-opace-eseot-help.php:185
+msgid "Overview"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1115
+msgid "All details"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1116
+#: includes/class-opace-eseot-help.php:246
+msgid "Local engines"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1117
+msgid "Crawl"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1118
+msgid "Saved tools"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1121
+#: includes/class-opace-eseot-help.php:511
+msgid "Pass"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1122
+#: includes/class-opace-eseot-help.php:512
+msgid "Review"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1123
+#: includes/class-opace-eseot-help.php:513
+msgid "Info"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1125
+msgid "Open the page in a new tab to run the audit"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1126
+msgid "The page did not report back. It may block framing or have a script error."
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1128
+msgid "Crawl check unavailable."
+msgstr ""
+
+#. translators: %s: name of a saved tool.
+#: includes/class-opace-eseot-audit.php:1130
+#, php-format
+msgid "Verify with %s"
+msgstr ""
+
+#: includes/class-opace-eseot-audit.php:1131
+msgid "No saved tools match this finding."
+msgstr ""
+
+#. translators: %s: date and time of the audit.
+#: includes/class-opace-eseot-audit.php:1133
+#, php-format
+msgid "Audited %s"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:84
+#: includes/class-opace-eseot-help.php:269
+msgid "Essential SEO Toolkit help"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:85
+msgid "Help"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:193
+msgid "Privacy"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:194
+msgid "Nothing about your pages leaves this site. The audit runs in your own browser against a page served by your own site, the two engines are bundled with the plugin, and the crawl check is your server requesting its own pages. A third-party service only sees an address when you click a deeper check."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:195
+msgid "Settings live in WordPress options. The only thing kept per page is a short summary of the counts, top Review labels and metrics; full results are never stored. Deleting the plugin removes all of it."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:200
+msgid "More help"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:201
+#: includes/class-opace-eseot-help.php:223
+msgid "Help page"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:202
+msgid "Support forum"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:214
+msgid "This page explains what the toolkit does, where to find it, how to read an audit, what the engines and crawl rows mean, saved tools and placeholders, settings, privacy and how to fix common problems. Use the list at the top to jump to a section."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:218
+msgid "Sources are the saved tool links: write each URL as a template with a placeholder where the page address belongs. Categories group them. Post types choose which editors show the launcher and the audit panel. Audit controls whether audits start automatically, whether the accessibility and Web Vitals engines run, and which list tables show the SEO audit column."
+msgstr ""
+
+#. translators: %s: link to the Help page.
+#: includes/class-opace-eseot-help.php:222
+#, php-format
+msgid "Placeholders and the migration from 1.x are explained on the %s."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:228
+msgid "Enter any address on this site and click Audit. Published posts are audited at their permalink; drafts, pending and private posts through their preview link. Posts sent here by the Run page audit bulk action are audited one after another and summarised in a table."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:229
+msgid "The page loads in a hidden frame inside this screen and is checked by your own browser. Pass found nothing to change, Review deserves a look, and Info is a descriptive count with no target. The checks are review prompts, not ranking guarantees."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:243
+msgid "What the toolkit does"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:244
+msgid "Where to find it"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:245
+msgid "Reading the results"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:247
+msgid "Crawl signals"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:248
+msgid "Saved tools and placeholders"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:249
+msgid "Settings explained"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:250
+msgid "Privacy and data"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:251
+msgid "Troubleshooting"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:271
+msgid "How the page audit works, what each finding means and where everything lives in WordPress."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:274
+msgid "On this page"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:311
+msgid "Back to top"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:429
+msgid "Essential SEO Toolkit turns the post you are editing into a private, practical on-page review. Click Run audit and the page loads in a hidden frame inside the admin, is checked by your own browser and reports Pass, Review and Info findings instead of an unexplained score. Two bundled engines add accessibility findings and Web Vitals for that load, and a crawl check reports what your server sends back for the address."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:430
+msgid "Alongside the audit, the toolkit keeps a list of saved SEO tools and opens each one for the page you are working on. Nothing about your pages leaves the site: the checks run locally, the engines ship with the plugin, and a third-party service only sees an address when you click a deeper check. The checks are review prompts, not ranking guarantees; context and human judgement still matter."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:438
+msgid "Posts"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:439
+msgid "Pages"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:440
+msgid "Dashboard"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:441
+#: includes/class-opace-eseot-help.php:758
+#: includes/class-opace-eseot-settings.php:683
+#: includes/class-opace-eseot-settings.php:969
+#: includes/class-opace-eseot-settings.php:973
+msgid "Post types"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:445
+msgid "Editor panel"
+msgstr ""
+
+#. translators: %s: link to the Post types settings tab.
+#: includes/class-opace-eseot-help.php:450
+#, php-format
+msgid "A compact box below the block or classic editor on every post type ticked under %s. Click Run audit; the results appear in Overview, All details, Local engines, Crawl and Saved tools tabs."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:457
+msgid "Page audit screen"
+msgstr ""
+
+#. translators: %s: link to the Page audit screen.
+#: includes/class-opace-eseot-help.php:462
+#, php-format
+msgid "%s audits any address on this site, including the home page and archives; drafts are audited through their preview link, and a bulk selection from a list table is audited one page after another."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:469
+#: includes/class-opace-eseot-settings.php:1023
+msgid "List tables"
+msgstr ""
+
+#. translators: 1: link to the Posts list, 2: link to the Pages list.
+#: includes/class-opace-eseot-help.php:474
+#, php-format
+msgid "The %1$s and %2$s lists (and enabled custom post types) show an SEO audit column with the last counts, Audit page and SEO tools row actions, and a Run page audit bulk action."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:482
+msgid "Admin bar"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:483
+msgid "An SEO Toolkit menu on the front end and in the admin, for users who can edit posts, with Audit this page and the saved tools resolved for the page you are viewing or editing."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:486
+msgid "Dashboard widget"
+msgstr ""
+
+#. translators: %s: link to the Dashboard.
+#: includes/class-opace-eseot-help.php:491
+#, php-format
+msgid "The %s lists the last five audited pages with their counts and an Audit home page button."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:498
+msgid "Sidebar launcher"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:499
+msgid "The small Essential SEO Toolkit box in the editor sidebar lists the saved tools for the post, with a search field and a Run a page audit link that opens the panel."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:511
+msgid "The check found nothing to change."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:512
+msgid "Something deserves a look. Each Review finding says why it matters and what to do; it is not a fault by itself."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:513
+msgid "A descriptive count with no target, such as the number of visible words or links."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:516
+msgid "Start here lists the Review findings that most need attention, up to four, with the rest under All details. Copy summary puts the counts and every finding on the clipboard as plain text, ready to paste into a ticket or a message."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:517
+msgid "The 14 checks, in the order they appear, grouped as Search appearance, Indexing & delivery, Content & accessibility and Markup & navigation:"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:520
+msgid "Check"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:521
+msgid "What it looks at"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:522
+msgid "When it shows Review"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:536
+msgid "Page title"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:536
+msgid "The length of the document title, a strong cue for search results and browser tabs."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:536
+msgid "The title is missing, shorter than 15 characters or longer than 60."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:537
+msgid "Meta description"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:537
+msgid "The length of the meta description, which search engines may use as the result snippet."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:537
+msgid "The description is missing, shorter than 70 characters or longer than 160."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:538
+msgid "H1 heading"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:538
+msgid "How many H1 headings the page has."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:538
+msgid "There is no H1, or more than one."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:539
+msgid "Canonical URL"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:539
+msgid "The canonical link, which consolidates duplicate URLs around the preferred version."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:539
+msgid "No canonical link was detected, or the value is not an absolute URL."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:540
+msgid "Indexing directive"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:540
+msgid "The robots meta tag on the page."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:540
+msgid "It contains noindex, which normally keeps the page out of search results."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:541
+msgid "HTTPS"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:541
+msgid "The scheme of the audited address."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:541
+msgid "The page is not using HTTPS."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:542
+msgid "Document language"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:542
+msgid "The lang attribute on the html element, which helps assistive technology interpret the page."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:542
+msgid "No lang value was detected."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:543
+msgid "Mobile viewport"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:543
+msgid "The viewport meta tag that lets pages render correctly on mobile screens."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:543
+msgid "No responsive viewport directive was detected."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:544
+msgid "Image alt attributes"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:544
+msgid "Images with no alt attribute at all. An empty alt counts as present and may be correct for decoration."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:544
+msgid "One or more images have no alt attribute."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:545
+msgid "Heading order"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:545
+msgid "Skipped levels in the heading outline."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:545
+msgid "The outline skips a level, such as H2 straight to H4."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:546
+msgid "Page content"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:546
+msgid "The number of visible words. This is a descriptive count, not a quality target."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:546
+#: includes/class-opace-eseot-help.php:549
+msgid "Never; always Info."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:547
+msgid "Structured data"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:547
+msgid "JSON-LD blocks and the types they declare."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:547
+msgid "Never; always Info. Validate every detected type with the linked tools."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:548
+msgid "Social metadata"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:548
+msgid "The Open Graph title, description and image used for shared-link previews."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:548
+msgid "Never. Pass when all three are present, otherwise Info."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:549
+msgid "Links"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:549
+msgid "Internal and external link counts and how many use nofollow."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:558
+msgid "Accessibility (axe-core)"
+msgstr ""
+
+#. translators: %s: link to the axe-core project.
+#: includes/class-opace-eseot-help.php:563
+#, php-format
+msgid "%s 4.13.0 runs its default rule set against the loaded page, including best-practice rules, so findings such as missing landmarks can appear. Embedded frames are excluded. The panel shows up to five rule violations with up to three example selectors each, plus why each matters and what to do."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:567
+msgid "It can find missing alternative text, unlabelled buttons, links and form controls, low colour contrast, missing document language and missing landmarks. It cannot judge whether alt text is accurate, whether the keyboard order makes sense, or whether the content is understandable. Automated checks do not cover every accessibility requirement; findings still need human review."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:570
+msgid "Critical"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:570
+msgid "Blocks some people from using the content. Fix first."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:571
+msgid "Serious"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:571
+msgid "A significant barrier for some users."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:572
+msgid "Moderate"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:572
+msgid "Makes the page harder to use but does not block it."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:573
+msgid "Minor"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:573
+msgid "A small inconvenience worth tidying."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:577
+msgid "Web Vitals"
+msgstr ""
+
+#. translators: %s: link to the web-vitals library.
+#: includes/class-opace-eseot-help.php:582
+#, php-format
+msgid "The %s library captures five metrics from the load inside the hidden frame. Ratings use the thresholds built into the library."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:588
+msgid "Metric"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:589
+msgid "What it measures"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:590
+msgid "Good"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:591
+msgid "Needs improvement"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:592
+msgid "Poor"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:597
+msgid "Measured inside a hidden frame at desktop width. Layout shift and paint timings differ from a real visit; treat them as indicative. These are current-visit diagnostics, not PageSpeed Insights field data or a ranking score."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:598
+msgid "INP is usually missing because it needs a real click or key press, and nothing interacts with the page during an automated load. The panel shows Use the page first in its place."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:608
+msgid "Main content paint (LCP)"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:608
+msgid "Time until the largest visible element painted."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:608
+msgid "Up to 2,500 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:608
+msgid "2,500 to 4,000 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:608
+msgid "Over 4,000 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:609
+msgid "Interaction response (INP)"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:609
+msgid "Delay between an interaction and the next paint."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:609
+msgid "Up to 200 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:609
+msgid "200 to 500 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:609
+msgid "Over 500 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:610
+msgid "Visual stability (CLS)"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:610
+msgid "How much the layout moved while loading."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:610
+msgid "Up to 0.1"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:610
+msgid "0.1 to 0.25"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:610
+msgid "Over 0.25"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:611
+msgid "First visible content (FCP)"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:611
+msgid "Time until the first text or image painted."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:611
+msgid "Up to 1,800 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:611
+msgid "1,800 to 3,000 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:611
+msgid "Over 3,000 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:612
+msgid "Server response (TTFB)"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:612
+msgid "Time until the first byte of the response arrived."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:612
+msgid "Up to 800 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:612
+msgid "800 to 1,800 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:612
+msgid "Over 1,800 ms"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:620
+msgid "The Crawl tab is the one part of the audit that runs on the server: your site requests the address from itself (a HEAD request, then GET when HEAD is refused), follows up to three redirects, waits up to eight seconds and caches the result for one minute. No other server is involved."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:623
+msgid "Row"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:624
+msgid "What it means"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:638
+msgid "Page response"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:638
+msgid "The HTTP status the address returned. A 2xx status shows as good; anything else, or no response, is marked for review."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:639
+msgid "Redirect"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:639
+msgid "When the address redirected, the detail line shows the final URL. Audit the final URL if it is the one visitors land on."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:640
+msgid "robots.txt"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:640
+msgid "Whether robots.txt was found and whether it declares a sitemap. WordPress serves a virtual robots.txt when no file exists."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:641
+msgid "robots.txt rule for this path"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:641
+msgid "Whether a Disallow rule in robots.txt matches the audited path, and which one. Crawlers that honour robots.txt will not fetch a disallowed page."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:642
+msgid "Sitemap"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:642
+msgid "The first sitemap that responded, checking robots.txt declarations, then /wp-sitemap.xml (the WordPress default), then /sitemap.xml."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:643
+msgid "Response indexing rule"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:643
+msgid "The X-Robots-Tag response header, if the server sends one. No header normally means the page relies on its HTML robots setting."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:644
+msgid "Browser caching"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:644
+msgid "Whether a Cache-Control header is present, and its value."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:645
+msgid "Security headers"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:645
+msgid "Whether Content-Security-Policy and Strict-Transport-Security were visible to the request."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:646
+msgid "Other response headers"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:646
+msgid "How many of X-Content-Type-Options, X-Frame-Options, Referrer-Policy and Permissions-Policy are present, plus the content type."
+msgstr ""
+
+#. translators: 1: link to the Sources settings tab, 2: link to the Categories settings tab.
+#: includes/class-opace-eseot-help.php:657
+#, php-format
+msgid "A saved tool is a link to an independent website with a placeholder where the page address belongs. Six ship by default and none needs an account at the time of writing. Manage them under %1$s and group them under %2$s."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:658
+#: includes/class-opace-eseot-settings.php:681
+#: includes/class-opace-eseot-settings.php:888
+#: includes/class-opace-eseot-settings.php:911
+msgid "Sources"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:659
+#: includes/class-opace-eseot-settings.php:682
+#: includes/class-opace-eseot-settings.php:879
+msgid "Categories"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:664
+msgid "Tool"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:665
+#: includes/class-opace-eseot-settings.php:766
+#: includes/class-opace-eseot-settings.php:838
+msgid "Category"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:666
+msgid "What it does"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:671
+msgid "Categories are the headings in the sidebar launcher, the admin bar menu and the Saved tools tab. Rename or remove them on the Categories tab; a tool whose category was removed is listed under Other tools until you give it a new one."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:673
+msgid "Adding your own"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:675
+msgid "On the Sources tab enter a name, a URL template and a category. The template must start with http:// or https:// and use only the six placeholders below, shown here for https://www.example.com/blog/hello-world/"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:684
+msgid "Example: a checker that takes the address as a query parameter would be saved as"
+msgstr ""
+
+#. translators: %s: the resolved example URL.
+#: includes/class-opace-eseot-help.php:689
+#, php-format
+msgid "and would open %s for that post. A template with any other bracketed token is rejected when you save."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:693
+msgid "Links open independent third-party services in a new tab. Some need an account or may not accept a URL automatically, and each runs under its own terms and privacy policy."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:703
+msgid "Performance & UX"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:703
+msgid "Lab and field performance data for the page, the check to confirm a slow Web Vital with."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:704
+#: includes/class-opace-eseot-help.php:705
+msgid "Search appearance & markup"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:704
+msgid "Whether the structured data on the page qualifies for enhanced search results."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:705
+msgid "Validates every schema.org type the page declares."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:706
+msgid "Accessibility"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:706
+msgid "A visual accessibility report of the page from WebAIM."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:707
+#: includes/class-opace-eseot-help.php:708
+msgid "Technical & DNS"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:707
+msgid "Grades the HTTP response security headers of the host."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:708
+msgid "Looks up the DNS records for the host."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:722
+msgid "The full address:"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:727
+msgid "The same, percent-encoded for a query string:"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:732
+msgid "The host without a leading www.:"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:737
+msgid "The host, percent-encoded:"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:742
+msgid "The scheme and separator:"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:747
+msgid "The path and any query string:"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:760
+msgid "Tick the post types that should show the sidebar launcher and the audit panel in the editor. Only public post types with an admin UI are listed, so custom types from themes and plugins appear here too. Posts and pages are ticked on a fresh install."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:766
+#: includes/class-opace-eseot-settings.php:1006
+msgid "Run the page audit automatically when a post opens"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:766
+msgid "Off by default. Leaving it off keeps editing fast on large pages, because the audit loads a hidden copy of the page and a 580 KB engine each time it runs."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:767
+#: includes/class-opace-eseot-settings.php:1011
+msgid "Run the accessibility engine (axe-core) during audits"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:767
+msgid "On by default. Untick it to skip the accessibility card."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:768
+#: includes/class-opace-eseot-settings.php:1016
+msgid "Capture Web Vitals during audits"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:768
+msgid "On by default. Untick it to skip the performance card."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:769
+#: includes/class-opace-eseot-settings.php:1027
+msgid "Show the SEO audit column on these list tables"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:769
+msgid "Which list tables get the column, the row actions and the bulk action. It follows the Post types tab until you change it here."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:773
+msgid "Updating from 1.x"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:775
+msgid "Version 2.0.0 ran a one-time migration of the saved tools. A saved tool was removed only when its URL was exactly one of the old defaults; anything you added or edited was kept. The six current defaults were added where no tool of that name existed, the old category names were renamed to the current four, and empty retired categories were dropped. A notice pointed you at the Sources tab to review the result."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:783
+msgid "What is stored"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:787
+msgid "Options"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:787
+msgid "eseot_sources, eseot_categories, eseot_post_types and eseot_audit hold your settings; eseot_version records the data version; eseot_show_upgrade_notice flags the one-time notice; eseot_audit_summaries_urls keeps the last 50 summaries for addresses that are not posts, such as the home page."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:788
+msgid "Post meta"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:788
+msgid "_opace_eseot_audit_summary and _opace_eseot_audit_time hold, per audited post, the Pass, Review and Info counts, up to five top Review labels, the five metrics and the time. This feeds the list column and the dashboard widget. Full results are never stored."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:789
+msgid "Transients"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:789
+msgid "Each crawl result is cached for 60 seconds under a key derived from the address, so repeated audits do not hammer the site."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:793
+msgid "What is sent, and when"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:795
+msgid "Nothing, until you click a deeper check. The audit runs in your browser against a page served by your own site; the two engines are bundled files, not fetched from a CDN; the crawl check is your server talking to itself; and the summary is saved to your own database over the REST API with a nonce and capability check. Opening a saved tool sends that page address or host to the independent service, in a new tab, under its terms and privacy policy. Opace receives nothing."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:796
+msgid "Visitors are never affected. The engines are added to a page only for a logged-in editor with a valid one-off token, and that request is marked noindex and served uncached."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:798
+msgid "Uninstall"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:800
+msgid "Deleting the plugin from the Plugins screen removes every option above, both post meta keys on every post and any cached crawl results, on every site of a network. Deactivating leaves them in place so nothing is lost if you reactivate."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:810
+msgid "The audit times out or says the page did not report back"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:811
+msgid "The hidden frame could not load or could not message the panel within 20 seconds. Usual causes: a security plugin or host header that blocks framing (X-Frame-Options or a Content-Security-Policy frame-ancestors rule), an admin address on a different origin from the front end, a redirect off-site, or a script error on the page. Click Open the page in a new tab; the audit runs there, reports back and the tab closes itself."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:814
+msgid "Metrics are missing"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:815
+msgid "INP needs a real interaction and is expected to be missing. If other metrics show Not observed, the frame was still loading when the two and a half second capture window closed; click Run again. Check that Capture Web Vitals is ticked on the Audit tab."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:818
+msgid "Save the post to get an address"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:819
+msgid "A brand-new post has no permalink or preview link yet. Save the draft once and the panel and launcher pick up the preview address."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:822
+msgid "Crawl check unavailable"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:823
+msgid "The server could not request its own address. Some hosts block loopback requests, or the site host name does not resolve from inside the server. The rest of the audit is unaffected. Ask your host to allow HTTP requests from the site to itself; the same limit also affects WP-Cron and the Site Health loopback test."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:826
+msgid "The panel is squashed in the block editor"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:827
+msgid "The block editor keeps meta boxes in a drawer below the content and remembers the height you drag it to. Drag the top edge of the drawer upwards to give the panel room, or click Run a page audit in the sidebar launcher, which opens the drawer and scrolls to the panel."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:830
+msgid "Results differ from the Chrome extension or PageSpeed Insights"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:831
+msgid "The page is audited in a hidden frame while you are logged in, so timings and layout shift differ from a clean visit. PageSpeed Insights reports Google lab and field data, not one visit from your browser."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:836
+msgid "Support"
+msgstr ""
+
+#. translators: 1: link to the WordPress.org support forum, 2: link to the Chrome Web Store listing.
+#: includes/class-opace-eseot-help.php:841
+#, php-format
+msgid "Ask on the %1$s with your WordPress and PHP versions and what the panel showed. The same audit and the same default tools are available for any public web page as %2$s."
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:842
+msgid "WordPress.org support forum"
+msgstr ""
+
+#: includes/class-opace-eseot-help.php:843
+msgid "Essential SEO Toolkit for Chrome"
+msgstr ""
+
+#. translators: %s: human-readable time difference, for example "2 hours".
+#: includes/class-opace-eseot-integrations.php:152
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#. translators: %s: post title.
+#: includes/class-opace-eseot-integrations.php:211
+#, php-format
+msgid "Run a page audit for %s"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:212
+msgid "Audit page"
+msgstr ""
+
+#. translators: %s: post title.
+#: includes/class-opace-eseot-integrations.php:226
+#, php-format
+msgid "Open saved SEO tools for %s"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:227
+msgid "SEO tools"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:260
+msgid "Run page audit"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:323
+msgid "SEO audit"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:359
+msgid "Not audited"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:373
+msgid "Audit now"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:470
+msgid "SEO Toolkit"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:480
+#: includes/class-opace-eseot-integrations.php:665
+#: includes/class-opace-eseot-plugin.php:288
+#: includes/class-opace-eseot-settings.php:92
+#: includes/class-opace-eseot-settings.php:93
+msgid "Essential SEO Toolkit"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:494
+msgid "Audit this page"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:629
+#: includes/class-opace-eseot-plugin.php:426
+msgid "Other tools"
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:678
+msgid "No pages audited yet. Open a post and run the page audit, or audit the home page."
+msgstr ""
+
+#: includes/class-opace-eseot-integrations.php:707
+msgid "Audit home page"
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:122
+msgid "Essential SEO Toolkit 2.0.0 replaced its default tools with the current set used by the Chrome extension. Your own links were kept."
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:123
+msgid "Review tools"
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:125
+#: includes/class-opace-eseot-settings.php:760
+#: includes/class-opace-eseot-settings.php:882
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:136
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:297
+msgid "Essential SEO Toolkit page audit"
+msgstr ""
+
+#. translators: %s: link to the post being edited.
+#: includes/class-opace-eseot-plugin.php:375
+#, php-format
+msgid "Open %s with:"
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:379
+msgid "Save the post to get an address you can open with your saved tools."
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:387
+msgid "Run a page audit"
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:389
+msgid "Links open independent third-party services in a new tab. Some need an account or may not accept a URL automatically."
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:429
+#: includes/class-opace-eseot-plugin.php:430
+msgid "Search saved tools"
+msgstr ""
+
+#. translators: %s: link to the settings screen.
+#: includes/class-opace-eseot-plugin.php:448
+#, php-format
+msgid "No saved tools yet. Add some under %s."
+msgstr ""
+
+#: includes/class-opace-eseot-plugin.php:454
+msgid "No saved tools match your search."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:478
+msgid "One or more source URLs were not saved. Each URL must start with http:// or https:// and use only the supported placeholders."
+msgstr ""
+
+#. translators: %s: source name entered by the user.
+#: includes/class-opace-eseot-settings.php:482
+#, php-format
+msgid "The URL for %s was not saved. It must start with http:// or https:// and use only the supported placeholders."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:716
+msgid "Saved tools, their categories, the post types that get the editor panel and how the page audit runs."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:718
+msgid "Settings sections"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:757
+msgid "Saved sources"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:758
+msgid "Each source is a tool link. Write the URL as a template and put a placeholder where the page address belongs. Links open in a new tab from the editor meta box."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:764
+#: includes/class-opace-eseot-settings.php:827
+#: includes/class-opace-eseot-settings.php:887
+#: includes/class-opace-eseot-settings.php:926
+msgid "Name"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:765
+#: includes/class-opace-eseot-settings.php:831
+msgid "URL template"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:767
+#: includes/class-opace-eseot-settings.php:889
+msgid "Remove"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:773
+msgid "No sources saved yet. Add one below."
+msgstr ""
+
+#. translators: %s: source name.
+#: includes/class-opace-eseot-settings.php:788
+#, php-format
+msgid "Name of source %s"
+msgstr ""
+
+#. translators: %s: source name.
+#: includes/class-opace-eseot-settings.php:797
+#, php-format
+msgid "URL template for %s"
+msgstr ""
+
+#. translators: %s: source name.
+#: includes/class-opace-eseot-settings.php:806
+#, php-format
+msgid "Category for %s"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:824
+msgid "Add a source"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:834
+msgid "Preview"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:835
+msgid "Unknown placeholder"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:847
+msgid "Saving applies every change on this tab, including edits to the table above."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:851
+msgid "Placeholders"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:852
+msgid "Placeholders are replaced with parts of the current permalink, shown here for https://www.example.com/blog/hello-world/"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:859
+msgid "A URL must start with http:// or https:// and may only use the placeholders above."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:880
+msgid "Categories group the sources shown in the editor meta box. Add, rename or remove them here, then assign sources to them on the Sources tab."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:886
+#: includes/class-opace-eseot-settings.php:901
+msgid "ID"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:895
+msgid "No categories saved yet. Add one below."
+msgstr ""
+
+#. translators: %s: category name.
+#: includes/class-opace-eseot-settings.php:906
+#, php-format
+msgid "Name of category %s"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:923
+msgid "Add a category"
+msgstr ""
+
+#. translators: %s: name of the source or category.
+#: includes/class-opace-eseot-settings.php:946
+#, php-format
+msgid "%s will be removed when you save changes."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:970
+msgid "Tick the post types that should show the saved-tools launcher and the page audit panel in the editor. Only public post types registered on this site are listed."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1000
+msgid "How the audit runs in the editor and on the Page audit screen. Everything runs in your own browser against this site."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1007
+msgid "Loads the page in a frame as soon as the editor opens. Leave this off to keep editing fast on large pages and run the audit on demand."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1012
+msgid "Checks the audited page against axe-core rules and lists any violations under Local engines."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1017
+msgid "Records LCP, CLS, INP, FCP and TTFB for the audit visit. A local snapshot, not field data or a ranking score."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1024
+msgid "Show the SEO audit column, with the last stored result, on these list tables. Each user can still hide it under Screen Options."
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1055
+msgid "No categories yet"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1063
+msgid "Other tools (category removed)"
+msgstr ""
+
+#. translators: %s: name of the source or category.
+#: includes/class-opace-eseot-settings.php:1085
+#, php-format
+msgid "Remove %s"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1100
+msgid "The full permalink, for example https://www.example.com/blog/hello-world/"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1105
+msgid "The permalink percent-encoded for use in a query string, for example"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1110
+msgid "The host with any leading www. removed, for example example.com"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1115
+msgid "The host percent-encoded for use in a query string"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1120
+msgid "The scheme and separator, for example https://"
+msgstr ""
+
+#: includes/class-opace-eseot-settings.php:1125
+msgid "The path plus the query string when there is one, for example /blog/hello-world/"
+msgstr ""

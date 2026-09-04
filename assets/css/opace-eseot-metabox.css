@@ -1,0 +1,267 @@
+/**
+ * Opace Essential SEO Toolkit: sidebar launcher meta box.
+ * Sits inside a WordPress side meta box (classic and block editor).
+ * Brand colours are accents only; links and focus follow the admin colour scheme.
+ */
+
+.opace-eseot-metabox {
+	--opace-eseot-cyan: #12a3d8;
+	--opace-eseot-navy: #0b1f3a;
+	--opace-eseot-orange: #f47b20;
+	--opace-eseot-link: var(--wp-admin-theme-color, #2271b1);
+	--opace-eseot-line: #dcdcde;
+	--opace-eseot-muted: #646970;
+	color: #1d2327;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.opace-eseot-metabox [hidden] {
+	display: none !important;
+}
+
+/* Header: mark plus "Open {post} with:" */
+.opace-eseot-metabox__header {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0 0 16px;
+}
+
+.opace-eseot-metabox__mark {
+	flex: 0 0 32px;
+	width: 32px;
+	height: 32px;
+}
+
+.opace-eseot-metabox__intro {
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+.opace-eseot-metabox__intro a {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.opace-eseot-metabox__intro a:hover,
+.opace-eseot-metabox__intro a:focus {
+	text-decoration: underline;
+}
+
+/* Search field, matching wp-admin text inputs */
+.opace-eseot-search {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: none;
+	min-height: 36px;
+	margin: 0 0 12px;
+	padding: 0 12px;
+	border: 1px solid #8c8f94;
+	border-radius: 6px;
+	background: #fff;
+	box-shadow: 0 0 0 transparent;
+	color: #2c3338;
+	font-size: 13px;
+	line-height: 2;
+}
+
+.opace-eseot-search:focus {
+	border-color: var(--opace-eseot-link);
+	box-shadow: 0 0 0 1px var(--opace-eseot-link);
+	outline: 2px solid transparent;
+}
+
+.opace-eseot-search::-webkit-search-cancel-button {
+	cursor: pointer;
+}
+
+/* Accordion */
+ul.opace-eseot-accordion,
+ul.opace-eseot-sources {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.opace-eseot-category {
+	margin: 0 0 8px;
+	overflow: hidden;
+	border: 1px solid var(--opace-eseot-line);
+	border-radius: 8px;
+	background: #fff;
+	transition: border-color 0.15s ease;
+}
+
+.opace-eseot-category.is-open {
+	border-color: var(--opace-eseot-cyan);
+}
+
+.opace-eseot-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 44px;
+	margin: 0;
+	padding: 8px 12px;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	color: #1d2327;
+	font: inherit;
+	font-weight: 600;
+	text-align: left;
+	cursor: pointer;
+}
+
+.opace-eseot-toggle:hover {
+	background: #f6f7f7;
+	color: var(--opace-eseot-navy);
+}
+
+.opace-eseot-toggle:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.opace-eseot-toggle:focus-visible {
+	outline: 2px solid var(--opace-eseot-link);
+	outline-offset: -2px;
+}
+
+.opace-eseot-toggle::after {
+	content: "\f140";
+	flex: 0 0 auto;
+	color: var(--opace-eseot-muted);
+	font: normal 20px/1 dashicons;
+	speak: never;
+	transition: transform 0.2s ease;
+	-webkit-font-smoothing: antialiased;
+}
+
+.opace-eseot-toggle[aria-expanded="true"]::after {
+	transform: rotate(180deg);
+}
+
+/* Source links (selector outranks the ul reset above) */
+.opace-eseot-category .opace-eseot-sources {
+	padding: 4px 12px 8px;
+	border-top: 1px solid #f0f0f1;
+}
+
+.opace-eseot-source {
+	margin: 0;
+	padding: 0;
+}
+
+.opace-eseot-source a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	min-height: 36px;
+	padding: 6px 0;
+	color: var(--opace-eseot-link);
+	text-decoration: none;
+	overflow-wrap: anywhere;
+}
+
+.opace-eseot-source a::after {
+	content: "\f504";
+	flex: 0 0 auto;
+	color: #8c8f94;
+	font: normal 14px/1 dashicons;
+	speak: never;
+}
+
+.opace-eseot-source a:hover,
+.opace-eseot-source a:focus {
+	text-decoration: underline;
+}
+
+.opace-eseot-source a:hover::after {
+	color: var(--opace-eseot-cyan);
+}
+
+.opace-eseot-source a:focus-visible {
+	outline: 2px solid var(--opace-eseot-link);
+	outline-offset: 1px;
+	box-shadow: none;
+}
+
+/* Empty states */
+.opace-eseot-empty,
+.opace-eseot-metabox__none {
+	margin: 0 0 12px;
+	padding: 12px;
+	border-radius: 8px;
+	background: #f6f7f7;
+	color: #50575e;
+}
+
+/* Footer: the audit launcher and the third-party note, separated from the list */
+.opace-eseot-metabox__footer {
+	margin: 16px 0 0;
+	padding: 16px 0 0;
+	border-top: 1px solid var(--opace-eseot-line);
+}
+
+.opace-eseot-metabox__audit {
+	margin: 0;
+}
+
+.opace-eseot-metabox__audit-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	min-height: 32px;
+	padding: 0 12px;
+	border: 1px solid var(--opace-eseot-navy);
+	border-radius: 6px;
+	background: var(--opace-eseot-navy);
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: background-color 0.15s ease;
+}
+
+.opace-eseot-metabox__audit-link:hover,
+.opace-eseot-metabox__audit-link:focus {
+	background: #16305a;
+	border-color: #16305a;
+	color: #fff;
+	text-decoration: none;
+}
+
+.opace-eseot-metabox__audit-link:focus-visible {
+	outline: 2px solid var(--opace-eseot-cyan);
+	outline-offset: 2px;
+	box-shadow: none;
+}
+
+.opace-eseot-metabox__note {
+	margin: 12px 0 0;
+	color: var(--opace-eseot-muted);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/* Block editor sidebar: keep the layout identical to classic */
+.edit-post-meta-boxes-area .opace-eseot-metabox,
+.editor-meta-boxes-area .opace-eseot-metabox {
+	padding-top: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.opace-eseot-category,
+	.opace-eseot-toggle::after,
+	.opace-eseot-metabox__audit-link {
+		transition: none;
+	}
+}

@@ -1,0 +1,6 @@
+.DS_Store
+.cache/
+.phpunit.result.cache
+node_modules/
+vendor/
+reports/

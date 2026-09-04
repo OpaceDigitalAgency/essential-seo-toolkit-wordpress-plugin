@@ -1,0 +1,554 @@
+/**
+ * Opace Essential SEO Toolkit: Settings and Page audit screens.
+ * WordPress nav tabs, tables and buttons stay native; this adds the page frame,
+ * the cards each section sits in and a readable layout for the sources table.
+ */
+
+.opace-eseot-settings,
+.opace-eseot-audit-page {
+	--opace-eseot-cyan: #12a3d8;
+	--opace-eseot-navy: #0b1f3a;
+	--opace-eseot-orange: #f47b20;
+	--opace-eseot-line: #dcdcde;
+	--opace-eseot-muted: #646970;
+	--opace-eseot-shadow: 0 1px 2px rgba(11, 31, 58, 0.06), 0 1px 3px rgba(11, 31, 58, 0.04);
+	box-sizing: border-box;
+	max-width: 1120px;
+	margin: 24px auto 0;
+	padding: 0 20px 48px;
+}
+
+.opace-eseot-settings *,
+.opace-eseot-audit-page * {
+	box-sizing: border-box;
+}
+
+/* Page header: mark, title, one-line description */
+.opace-eseot-settings__title,
+.opace-eseot-settings h1,
+.opace-eseot-audit-page h1 {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	color: var(--opace-eseot-navy);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.opace-eseot-settings h1 img,
+.opace-eseot-settings__mark {
+	flex: 0 0 32px;
+	width: 32px;
+	height: 32px;
+}
+
+.opace-eseot-settings > .opace-eseot-intro,
+.opace-eseot-audit-page > .opace-eseot-intro,
+.opace-eseot-settings__lede {
+	max-width: 70ch;
+	margin: 8px 0 0;
+	color: var(--opace-eseot-muted);
+	font-size: 14px;
+}
+
+.opace-eseot-settings .nav-tab-wrapper {
+	margin: 24px 0 0;
+	padding-bottom: 0;
+}
+
+.opace-eseot-settings .nav-tab {
+	margin-left: 0;
+	margin-right: 4px;
+	padding: 8px 16px;
+	border-radius: 6px 6px 0 0;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.opace-eseot-settings .nav-tab:focus-visible {
+	outline: 2px solid var(--wp-admin-theme-color, #2271b1);
+	outline-offset: -2px;
+	box-shadow: none;
+}
+
+.opace-eseot-settings .notice,
+.opace-eseot-audit-page .notice {
+	margin: 16px 0 0;
+}
+
+/* Cards */
+.opace-eseot-card {
+	margin: 24px 0 0;
+	padding: 32px;
+	border: 1px solid var(--opace-eseot-line);
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: var(--opace-eseot-shadow);
+}
+
+.opace-eseot-card > h2:first-child,
+.opace-eseot-card > h3:first-child {
+	margin-top: 0;
+}
+
+.opace-eseot-card h2,
+.opace-eseot-card h3 {
+	margin: 0;
+	color: var(--opace-eseot-navy);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.opace-eseot-card h3 {
+	font-size: 16px;
+}
+
+.opace-eseot-card .opace-eseot-intro {
+	max-width: 70ch;
+	margin: 8px 0 0;
+	color: var(--opace-eseot-muted);
+}
+
+.opace-eseot-card > * + * {
+	margin-top: 24px;
+}
+
+.opace-eseot-card > h2 + .opace-eseot-intro,
+.opace-eseot-card > h3 + .opace-eseot-intro {
+	margin-top: 8px;
+}
+
+.opace-eseot-card .submit {
+	margin: 24px 0 0;
+	padding: 0;
+}
+
+.opace-eseot-card--quiet {
+	background: #f6f7f7;
+	box-shadow: none;
+}
+
+/* Tables: readable at 1280 px, never wider than the page */
+.opace-eseot-table {
+	margin-top: 24px;
+	border-radius: 6px;
+	table-layout: fixed;
+}
+
+.opace-eseot-table th,
+.opace-eseot-table td {
+	padding: 8px 12px;
+	vertical-align: middle;
+	overflow-wrap: anywhere;
+}
+
+.opace-eseot-table thead th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-weight: 600;
+}
+
+.opace-eseot-table tbody td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.opace-eseot-table input[type="text"],
+.opace-eseot-table input[type="url"],
+.opace-eseot-table select {
+	width: 100%;
+	max-width: none;
+	min-height: 36px;
+	border-radius: 6px;
+}
+
+.opace-eseot-table input.code,
+.opace-eseot-table code,
+.opace-eseot-table .column-url,
+.opace-eseot-table .opace-eseot-url {
+	word-break: break-all;
+}
+
+.opace-eseot-source-table .column-name {
+	width: 22%;
+}
+
+.opace-eseot-source-table .column-cat {
+	width: 18%;
+}
+
+.opace-eseot-category-table .column-count {
+	width: 8em;
+	text-align: center;
+}
+
+.opace-eseot-table code {
+	padding: 2px 6px;
+	background: #f0f0f1;
+	border-radius: 4px;
+	color: var(--opace-eseot-navy);
+	font-size: 12px;
+}
+
+.opace-eseot-table .column-id,
+.opace-eseot-table .opace-eseot-col-id {
+	width: 4em;
+}
+
+.opace-eseot-table .column-actions,
+.opace-eseot-table .opace-eseot-col-actions,
+.opace-eseot-table .actions {
+	width: 64px;
+	text-align: center;
+}
+
+.opace-eseot-table tbody tr:hover {
+	background: #f6f7f7;
+}
+
+/* Below 782 px WordPress hides non-primary columns behind a row toggle our
+   rows do not have, so stack every cell instead: each row becomes a small form. */
+@media screen and (max-width: 782px) {
+	.opace-eseot-table thead {
+		display: none;
+	}
+
+	.opace-eseot-table tbody tr {
+		display: block;
+		padding: 12px 0;
+	}
+
+	.opace-eseot-table tbody td {
+		display: block !important;
+		width: auto !important;
+		padding: 4px 12px;
+		text-align: left;
+	}
+
+	.opace-eseot-table tbody td.column-actions {
+		text-align: right;
+	}
+
+	.opace-eseot-table tbody td[data-label]::before {
+		content: attr(data-label) ": ";
+		color: var(--opace-eseot-muted);
+	}
+}
+
+/* Remove buttons as icon buttons */
+.opace-eseot-remove {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border-radius: 6px;
+	color: var(--opace-eseot-muted);
+	text-decoration: none;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.opace-eseot-remove:hover,
+.opace-eseot-remove:focus {
+	background: #fcf0f1;
+	color: #b32d2e;
+	text-decoration: none;
+}
+
+.opace-eseot-remove:focus {
+	box-shadow: none;
+}
+
+.opace-eseot-remove:focus-visible {
+	outline: 2px solid var(--wp-admin-theme-color, #2271b1);
+	outline-offset: 1px;
+}
+
+.opace-eseot-remove .dashicons {
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+}
+
+/* Add-new form: a 3-column grid, stacked below 960 px */
+.opace-eseot-add-row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 16px 24px;
+	align-items: end;
+	margin: 24px 0 0;
+}
+
+.opace-eseot-form--sources .opace-eseot-add-row {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr) auto;
+}
+
+.opace-eseot-form--categories .opace-eseot-add-row {
+	grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.opace-eseot-field {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.opace-eseot-field label {
+	display: block;
+	margin: 0 0 8px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.opace-eseot-field input,
+.opace-eseot-field select,
+.opace-eseot-add-row .regular-text {
+	width: 100%;
+	max-width: none;
+	height: 36px;
+	min-height: 36px;
+	border-radius: 6px;
+	line-height: 1.5;
+}
+
+.opace-eseot-add-row .submit,
+.opace-eseot-add-row .button {
+	margin: 0;
+}
+
+.opace-eseot-add-row .opace-eseot-field--submit {
+	align-self: end;
+}
+
+.opace-eseot-add-row .button-primary {
+	height: 36px;
+	min-height: 36px;
+	padding: 0 16px;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 34px;
+}
+
+/* The live preview spans the whole grid beneath the fields */
+.opace-eseot-add-row .opace-eseot-preview {
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+@media (max-width: 959px) {
+	.opace-eseot-form--sources .opace-eseot-add-row,
+	.opace-eseot-form--categories .opace-eseot-add-row {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+/* Resolved preview under the URL field (added by the script) */
+.opace-eseot-preview {
+	margin: 8px 0 0;
+	padding: 12px 16px;
+	border-radius: 6px;
+	background: #f6f7f7;
+	color: #50575e;
+	font-size: 12px;
+	line-height: 1.5;
+	word-break: break-all;
+}
+
+.opace-eseot-preview__label {
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.opace-eseot-preview--invalid {
+	background: #fcf0f1;
+	color: #b32d2e;
+}
+
+.opace-eseot-preview__token {
+	padding: 0 3px;
+	border-radius: 2px;
+	background: #fff;
+	color: #b32d2e;
+	font-weight: 600;
+}
+
+.opace-eseot-preview__warning {
+	display: block;
+	margin-top: 4px;
+}
+
+/* Placeholder help as a two-column definition grid */
+.opace-eseot-placeholders {
+	margin: 16px 0 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 1.5;
+	list-style: none;
+}
+
+dl.opace-eseot-placeholders {
+	display: grid;
+	grid-template-columns: max-content minmax(0, 1fr);
+	gap: 12px 24px;
+	align-items: baseline;
+}
+
+.opace-eseot-placeholders dt,
+.opace-eseot-placeholders dd,
+.opace-eseot-placeholders li {
+	margin: 0;
+}
+
+.opace-eseot-placeholders dd {
+	color: #3c434a;
+}
+
+ul.opace-eseot-placeholders li > code:first-child {
+	display: inline-block;
+	min-width: 9.5em;
+	margin-right: 8px;
+}
+
+.opace-eseot-placeholders code {
+	padding: 2px 8px;
+	border: 1px solid var(--opace-eseot-line);
+	border-radius: 4px;
+	background: #fff;
+	color: var(--opace-eseot-navy);
+	font-size: 12px;
+}
+
+.opace-eseot-card--quiet .description {
+	margin-top: 16px;
+}
+
+@media (max-width: 782px) {
+	dl.opace-eseot-placeholders {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 4px;
+	}
+
+	dl.opace-eseot-placeholders dd {
+		margin-bottom: 8px;
+	}
+
+	ul.opace-eseot-placeholders li > code:first-child {
+		display: block;
+		width: max-content;
+		min-width: 0;
+		margin: 6px 0 2px;
+	}
+}
+
+/* Checkbox groups: each option with a description beneath */
+.opace-eseot-options {
+	display: grid;
+	gap: 16px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.opace-eseot-option {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	gap: 4px 12px;
+	align-items: start;
+}
+
+.opace-eseot-option input[type="checkbox"] {
+	grid-row: 1 / 3;
+	margin: 3px 0 0;
+}
+
+.opace-eseot-option > label,
+.opace-eseot-option > .opace-eseot-option__label {
+	font-weight: 600;
+}
+
+.opace-eseot-option code {
+	margin-left: 4px;
+	padding: 1px 6px;
+	border-radius: 4px;
+	background: #f0f0f1;
+	font-size: 12px;
+}
+
+.opace-eseot-option .description {
+	grid-column: 2;
+	margin: 0;
+	color: var(--opace-eseot-muted);
+}
+
+/* Notices injected after a row is removed */
+.opace-eseot-sources-wrapper > .notice,
+.opace-eseot-categories-wrapper > .notice {
+	margin: 16px 0 0;
+}
+
+/* Page audit screen: address form card and the panel below it */
+.opace-eseot-audit-page__form {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 8px 12px;
+	align-items: end;
+	margin: 0;
+}
+
+.opace-eseot-audit-page__form label {
+	grid-column: 1 / -1;
+	font-weight: 600;
+}
+
+.opace-eseot-audit-page__form input[type="url"] {
+	width: 100%;
+	max-width: none;
+	min-height: 36px;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+.opace-eseot-audit-page__form .button-primary {
+	min-height: 36px;
+	padding: 0 20px;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 34px;
+}
+
+.opace-eseot-audit-page__form .description {
+	grid-column: 1 / -1;
+	margin: 0;
+	color: var(--opace-eseot-muted);
+}
+
+.opace-eseot-audit-page .opace-eseot-audit {
+	margin-top: 24px;
+}
+
+@media (max-width: 782px) {
+	.opace-eseot-settings,
+	.opace-eseot-audit-page {
+		margin-top: 16px;
+		padding: 0 12px 32px;
+	}
+
+	.opace-eseot-card {
+		padding: 20px;
+	}
+
+	.opace-eseot-audit-page__form {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.opace-eseot-remove {
+		transition: none;
+	}
+}

@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+contact_links:
+  - name: WordPress.org support
+    url: https://wordpress.org/support/plugin/opace-essential-seo-toolkit/
+    about: Ask a public usage question in the plugin support forum.
+  - name: Private security report
+    url: https://opace.agency/contact/
+    about: Report security issues privately to Opace.
+

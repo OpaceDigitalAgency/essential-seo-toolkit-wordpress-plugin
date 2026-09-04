@@ -1,0 +1,24 @@
+# Third-party software notices
+
+Opace Essential SEO Toolkit for WordPress is licensed under the GNU General Public License, version 3.0 or later (see the plugin header and `readme.txt`). It bundles the two open-source libraries below so that the page audit can run entirely inside the site owner's own browser. Both files are shipped **unmodified** and byte-identical to the copies distributed with the Essential SEO Toolkit Chrome extension. The plugin never fetches executable code from a remote server, and the libraries are loaded only on the audited page, only for a logged-in user with a valid audit nonce.
+
+## axe-core 4.13.0
+
+- Project and source code: https://github.com/dequelabs/axe-core
+- Copyright: Deque Systems, Inc. and contributors
+- Licence: Mozilla Public License 2.0 (MPL-2.0)
+- Bundled file: `vendor/axe-core/axe.min.js` (580,491 bytes, SHA-256 `c24f097bd2f451d4f933e8bc7d8d539f8672a2ebcb5cc9f9f3eec8ca9470a0c1`)
+- Licence text: `vendor/axe-core/LICENSE`
+- Additional notices for sub-dependencies bundled inside axe-core: `vendor/axe-core/LICENSE-3RD-PARTY.txt`
+- Modifications: none. The file header notice is retained. The MPL-2.0 is compatible with the GPL as a "Secondary License" (MPL-2.0 sections 1.12 and 3.3); the unminified source for this exact version is available from the project repository at tag `v4.13.0`.
+
+## web-vitals 6.2.1
+
+- Project and source code: https://github.com/GoogleChrome/web-vitals
+- Copyright: Google LLC
+- Licence: Apache License 2.0
+- Bundled file: `vendor/web-vitals/web-vitals.iife.js` (8,991 bytes, SHA-256 `1e5e9b9af6b8d71cfef508e5a869c53b4cf2bbccad8c9b5ac664c34e93f6151a`)
+- Licence text: `vendor/web-vitals/LICENSE`
+- Modifications: none. No NOTICE file ships with web-vitals. The Apache License 2.0 is compatible with GPL-3.0-or-later.
+
+Neither licence grants rights to the Deque or Google names or marks; they are used here only to identify the libraries.

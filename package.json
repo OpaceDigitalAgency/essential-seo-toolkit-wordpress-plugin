@@ -1,0 +1,30 @@
+{
+	"name": "essential-seo-toolkit-wordpress-plugin",
+	"version": "2.0.0",
+	"private": true,
+	"description": "Private on-page SEO audit and page-aware SEO toolkit for WordPress.",
+	"scripts": {
+		"env:start": "wp-env start",
+		"env:stop": "wp-env stop",
+		"env:destroy": "wp-env destroy",
+		"env:logs": "wp-env logs",
+		"env:debug-log": "wp-env run cli cat wp-content/debug.log",
+		"wp": "wp-env run cli wp",
+		"check": "wp-env run cli wp plugin check opace-essential-seo-toolkit --format=table",
+		"check:json": "wp-env run cli wp plugin check opace-essential-seo-toolkit --format=json",
+		"test:php": "wp-env run tests-cli --env-cwd=wp-content/plugins/opace-essential-seo-toolkit vendor/bin/phpunit",
+		"i18n:pot": "wp-env run cli wp i18n make-pot wp-content/plugins/opace-essential-seo-toolkit wp-content/plugins/opace-essential-seo-toolkit/languages/opace-essential-seo-toolkit.pot --domain=opace-essential-seo-toolkit",
+		"lint:php": "bash scripts/lint-php74.sh",
+		"seed:1.2.6": "bash scripts/seed-1.2.6-options.sh",
+		"reset:options": "bash scripts/reset-options.sh",
+		"test": "wp-env run tests-cli --env-cwd=wp-content/plugins/opace-essential-seo-toolkit vendor/bin/phpunit",
+		"composer:install": "wp-env run tests-cli --env-cwd=wp-content/plugins/opace-essential-seo-toolkit composer install --no-interaction --prefer-dist",
+		"test:php:standalone": "bash scripts/phpunit-standalone.sh",
+		"check:standalone": "npm run build && bash scripts/plugin-check-standalone.sh",
+		"build": "bash scripts/build-release.sh",
+		"checksum": "shasum -a 256 release/opace-essential-seo-toolkit-2.0.0.zip"
+	},
+	"devDependencies": {
+		"@wordpress/env": "^11.14.0"
+	}
+}

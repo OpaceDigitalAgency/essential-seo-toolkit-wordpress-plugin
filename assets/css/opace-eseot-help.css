@@ -1,0 +1,289 @@
+/**
+ * Opace Essential SEO Toolkit: Help screen (Essential SEO Toolkit > Help).
+ * A single readable column of cards. Brand colours are accents only;
+ * type, tables and links follow wp-admin.
+ */
+
+.opace-eseot-help {
+	--opace-eseot-cyan: #12a3d8;
+	--opace-eseot-navy: #0b1f3a;
+	--opace-eseot-orange: #f47b20;
+	--opace-eseot-line: #c3c4c7;
+	--opace-eseot-muted: #50575e;
+	max-width: 900px;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #1d2327;
+}
+
+/* Title with the mark */
+.opace-eseot-help__title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 4px;
+}
+
+.opace-eseot-help__mark {
+	flex: 0 0 32px;
+	width: 32px;
+	height: 32px;
+}
+
+.opace-eseot-help__lead {
+	margin: 0 0 20px;
+	max-width: 70ch;
+	font-size: 15px;
+	color: var(--opace-eseot-muted);
+}
+
+/* Table of contents */
+.opace-eseot-help__toc {
+	margin: 0 0 24px;
+	padding: 16px 20px;
+	border: 1px solid var(--opace-eseot-line);
+	border-left: 4px solid var(--opace-eseot-orange);
+	border-radius: 4px;
+	background: #fff;
+}
+
+.opace-eseot-help__toc h2 {
+	margin: 0 0 8px;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--opace-eseot-muted);
+}
+
+.opace-eseot-help__toc ol {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 4px 24px;
+	margin: 0;
+	padding: 0 0 0 1.4em;
+}
+
+.opace-eseot-help__toc li {
+	margin: 0;
+}
+
+.opace-eseot-help__toc a {
+	text-decoration: none;
+}
+
+.opace-eseot-help__toc a:hover,
+.opace-eseot-help__toc a:focus {
+	text-decoration: underline;
+}
+
+/* Section cards */
+.opace-eseot-help__card {
+	margin: 0 0 24px;
+	padding: 22px 26px 12px;
+	border: 1px solid var(--opace-eseot-line);
+	border-left: 4px solid var(--opace-eseot-cyan);
+	border-radius: 4px;
+	background: #fff;
+	scroll-margin-top: 48px;
+}
+
+.opace-eseot-help__card:target {
+	border-left-color: var(--opace-eseot-orange);
+}
+
+.opace-eseot-help__heading {
+	margin: 0 0 12px;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--opace-eseot-navy);
+}
+
+.opace-eseot-help__card h3 {
+	margin: 22px 0 8px;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--opace-eseot-navy);
+}
+
+.opace-eseot-help__card p {
+	margin: 0 0 12px;
+	max-width: 75ch;
+	font-size: 14px;
+}
+
+.opace-eseot-help__card code {
+	padding: 1px 6px;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	background: #f6f7f7;
+	color: var(--opace-eseot-navy);
+	font-size: 13px;
+	overflow-wrap: anywhere;
+}
+
+.opace-eseot-help__code {
+	margin: 0 0 12px;
+	padding: 10px 14px;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	background: #f6f7f7;
+	overflow-x: auto;
+}
+
+.opace-eseot-help__code code {
+	padding: 0;
+	border: 0;
+	background: none;
+}
+
+/* Bulleted surface list */
+.opace-eseot-help__list {
+	margin: 0 0 8px;
+	padding: 0;
+	list-style: none;
+}
+
+.opace-eseot-help__list > li {
+	position: relative;
+	margin: 0 0 12px;
+	padding-left: 18px;
+}
+
+.opace-eseot-help__list > li::before {
+	content: "";
+	position: absolute;
+	top: 0.55em;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--opace-eseot-cyan);
+}
+
+.opace-eseot-help__list strong {
+	display: block;
+	color: var(--opace-eseot-navy);
+}
+
+.opace-eseot-help__list p {
+	margin: 2px 0 0;
+}
+
+/* Term lists */
+.opace-eseot-help__terms {
+	margin: 0 0 14px;
+}
+
+.opace-eseot-help__terms dt {
+	margin: 10px 0 2px;
+	font-weight: 600;
+	color: var(--opace-eseot-navy);
+}
+
+.opace-eseot-help__terms dd {
+	margin: 0;
+	max-width: 75ch;
+}
+
+/* Placeholder reference: token beside its meaning */
+.opace-eseot-help__placeholders {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 6px 16px;
+	margin: 0 0 14px;
+	padding: 12px 16px;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	background: #f6f7f7;
+}
+
+.opace-eseot-help__placeholders dt,
+.opace-eseot-help__placeholders dd {
+	margin: 0;
+}
+
+.opace-eseot-help__placeholders code {
+	background: #fff;
+}
+
+/* Reference tables scroll inside the card, never the page */
+.opace-eseot-help__table-wrap {
+	margin: 0 0 14px;
+	overflow-x: auto;
+}
+
+.opace-eseot-help__table {
+	min-width: 560px;
+	border-color: var(--opace-eseot-line);
+}
+
+.opace-eseot-help__table th,
+.opace-eseot-help__table td {
+	padding: 10px 12px;
+	vertical-align: top;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.opace-eseot-help__table thead th {
+	font-weight: 600;
+	color: var(--opace-eseot-navy);
+}
+
+.opace-eseot-help__table tbody th {
+	width: 26%;
+	font-weight: 600;
+	text-align: left;
+	color: var(--opace-eseot-navy);
+}
+
+.opace-eseot-help__table--vitals tbody th {
+	width: 24%;
+}
+
+.opace-eseot-help__table--crawl tbody th {
+	width: 30%;
+}
+
+/* Back to top */
+.opace-eseot-help__top {
+	margin: 4px 0 0;
+	font-size: 12px;
+}
+
+.opace-eseot-help__top a {
+	text-decoration: none;
+	color: var(--opace-eseot-muted);
+}
+
+.opace-eseot-help__top a:hover,
+.opace-eseot-help__top a:focus {
+	text-decoration: underline;
+	color: #2271b1;
+}
+
+@media (max-width: 782px) {
+	.opace-eseot-help__card {
+		padding: 16px 16px 8px;
+	}
+
+	.opace-eseot-help__heading {
+		font-size: 18px;
+	}
+
+	.opace-eseot-help__toc {
+		padding: 12px 16px;
+	}
+
+	.opace-eseot-help__placeholders {
+		grid-template-columns: 1fr;
+		gap: 2px 0;
+	}
+
+	.opace-eseot-help__placeholders dd {
+		margin: 0 0 8px;
+	}
+}

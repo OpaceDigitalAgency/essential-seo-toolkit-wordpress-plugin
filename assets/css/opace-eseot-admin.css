@@ -1,0 +1,170 @@
+/**
+ * Opace Essential SEO Toolkit: list-table column and dashboard widget.
+ * Loaded only on enabled post type list tables and the dashboard.
+ * Brand colours are accents only; everything else follows wp-admin.
+ */
+
+/* "SEO audit" column */
+.fixed .column-opace_eseot_audit {
+	width: 16%;
+}
+
+.opace-eseot-audit-col {
+	display: inline-flex;
+	align-items: center;
+	min-height: 24px;
+	padding: 0 10px;
+	border-radius: 99px;
+	font-size: 12px;
+	font-weight: 600;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+.opace-eseot-audit-col--done {
+	background: transparent;
+	padding: 0;
+	min-height: 0;
+	color: inherit;
+}
+
+.opace-eseot-audit-col--none {
+	background: #f0f0f1;
+	color: #646970;
+}
+
+.opace-eseot-audit-col__time,
+.opace-eseot-audit-col__link {
+	display: inline-block;
+	margin-top: 6px;
+	font-size: 12px;
+}
+
+.opace-eseot-audit-col__time {
+	color: #646970;
+}
+
+@media screen and (max-width: 782px) {
+	.fixed .column-opace_eseot_audit {
+		width: auto;
+	}
+
+	.opace-eseot-audit-col {
+		white-space: normal;
+	}
+}
+
+/* Dashboard widget */
+.opace-eseot-dashboard {
+	--opace-eseot-cyan: #12a3d8;
+	--opace-eseot-orange: #f47b20;
+	margin: 0 -12px;
+}
+
+.opace-eseot-dashboard__empty {
+	margin: 0 12px 16px;
+	padding: 16px;
+	border-radius: 8px;
+	background: #f6f7f7;
+	color: #50575e;
+}
+
+ul.opace-eseot-dashboard__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.opace-eseot-dashboard__row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	grid-template-areas:
+		"title counts"
+		"title time";
+	gap: 2px 16px;
+	align-items: center;
+	min-height: 48px;
+	margin: 0;
+	padding: 8px 12px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.opace-eseot-dashboard__row:hover {
+	background: #f6f7f7;
+}
+
+.opace-eseot-dashboard__row:last-child {
+	border-bottom: 0;
+}
+
+.opace-eseot-dashboard__title {
+	grid-area: title;
+	overflow: hidden;
+	font-weight: 600;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.opace-eseot-dashboard__counts {
+	grid-area: counts;
+	justify-self: end;
+	display: inline-flex;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.opace-eseot-dashboard__time {
+	grid-area: time;
+	color: #646970;
+	font-size: 12px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.opace-eseot-dashboard__actions {
+	margin: 12px 12px 0;
+	padding: 16px 0 0;
+	border-top: 1px solid #f0f0f1;
+}
+
+.opace-eseot-dashboard__actions .button {
+	min-height: 36px;
+	border-radius: 6px;
+	line-height: 34px;
+}
+
+/* Pass / Review / Info count chips (list column and dashboard widget). */
+.opace-eseot-counts {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.opace-eseot-count {
+	display: inline-flex;
+	align-items: center;
+	min-height: 22px;
+	padding: 0 8px;
+	border-radius: 99px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+.opace-eseot-count--pass {
+	background: #e5f6ee;
+	color: #137a53;
+}
+
+.opace-eseot-count--review {
+	background: #fdf1dc;
+	color: #8a5a00;
+}
+
+.opace-eseot-count--info {
+	background: #e8effb;
+	color: #1f4e9c;
+}

@@ -1,0 +1,19 @@
+{
+	"name": "opace/essential-seo-toolkit-wordpress-dev",
+	"description": "PHPUnit dependencies for the Opace Essential SEO Toolkit test suite. Installed inside the wp-env tests container; not shipped.",
+	"type": "project",
+	"license": "GPL-3.0-or-later",
+	"require-dev": {
+		"phpunit/phpunit": "^9.6",
+		"yoast/phpunit-polyfills": "^4.0"
+	},
+	"config": {
+		"platform": {
+			"php": "7.4.33"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"sort-packages": true
+	}
+}
