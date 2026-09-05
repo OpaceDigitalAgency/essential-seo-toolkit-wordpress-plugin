@@ -1,6 +1,6 @@
 # Opace Essential SEO Toolkit & SEO Audit Tool – WordPress Plugin
 
-![Essential SEO Toolkit private WordPress SEO audit](.github/assets/essential-seo-toolkit-wordpress-hero.png)
+![Opace Essential SEO Toolkit for WordPress](.github/assets/essential-seo-toolkit-wordpress-hero.png)
 
 [![Version](https://img.shields.io/badge/version-2.0.0-0b6e4f)](https://github.com/OpaceDigitalAgency/essential-seo-toolkit-wordpress-plugin/releases/tag/v2.0.0)
 [![WordPress.org](https://img.shields.io/badge/WordPress.org-install-21759B?logo=wordpress&logoColor=white)](https://wordpress.org/plugins/opace-essential-seo-toolkit/)
